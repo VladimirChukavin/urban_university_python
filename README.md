@@ -14,3 +14,5 @@ https://urban-university.ru
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_4">Модуль 4. Модули и пакеты</a>
 
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_4_5">Пространство имен и области видимости</a>
+
+<a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_5">Модуль 5. Классы и объекты</a>
