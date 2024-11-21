@@ -4,7 +4,7 @@ import math
 
 class Figure:
     """
-    Добавить описание класса
+    Класс, содержащий необходимые атрибуты и методы для создания объекта геометрической фигуры
     """
     sides_count = 0
 
@@ -31,15 +31,14 @@ class Figure:
     def check_sides(self, *new_sides):
         if not self.__is_valid_sides(new_sides):
             self.__sides = [1 for _ in range(self.sides_count)]
+        else:
+            self.__sides = list(new_sides)
 
     def get_sides(self):
         return self.__sides
 
     def __len__(self):
-        if self.sides_count == 1:
-            return self.__sides[0]
-        else:
-            return sum(self.__sides)
+        return sum(self.__sides)
 
     def set_sides(self, *new_sides):
         if self.__is_valid_sides(new_sides):
@@ -48,14 +47,14 @@ class Figure:
 
 class Circle(Figure):
     """
-    Добавить описание класса
+    Класс, содержащий необходимые атрибуты и методы для создания объекта круга
     """
     sides_count = 1
 
     def __init__(self, color, *sides):
         super().__init__(color, *sides)
-        if not self.check_sides(*sides):
-            self.__sides = [1]
+        self.check_sides(*sides)
+        self.__sides = self.get_sides()
         self.__radius = self.__sides[0] / (2 * math.pi)
 
     def get_square(self):
@@ -64,41 +63,40 @@ class Circle(Figure):
 
 class Triangle(Figure):
     """
-    Добавить описание класса
+    Класс, содержащий необходимые атрибуты и методы для создания объекта треугольника
     """
     sides_count = 3
 
-    def __init__(self, color, sides):
-        super().__init__(color, sides)
-        if not self.__is_valid_sides(sides):
-            self.__sides = [1, 1, 1]
+    def __init__(self, color, *sides):
+        super().__init__(color, *sides)
+        self.check_sides(*sides)
+        self.__sides = self.get_sides()
 
     def get_square(self):
         half_perimeter = (self.__sides[0] + self.__sides[1] + self.__sides[2]) / 2
         square_triangle = math.sqrt(
             half_perimeter * (half_perimeter - self.__sides[0]) * (half_perimeter - self.__sides[1]) * (
                     half_perimeter - self.__sides[2]))
-        return square_triangle
+        return round(square_triangle, 2)
 
 
 class Cube(Figure):
     """
-    Добавить описание класса
+    Класс, содержащий необходимые атрибуты и методы для создания объекта куба
     """
     sides_count = 12
 
     def __init__(self, color, *sides):
         super().__init__(color, *sides)
         self.set_cube_sides(sides)
+        self.__sides = self.get_sides()
 
     def set_cube_sides(self, sides):
         if len(sides) == 1:
-            self.__sides = [sides[0] for _ in range(self.sides_count)]
+            cube_sides = [sides[0] for _ in range(self.sides_count)]
+            self.check_sides(*cube_sides)
         else:
-            self.__sides = [1 for _ in range(self.sides_count)]
-
-    def get_sides(self):
-        return self.__sides
+            self.check_sides(*sides)
 
     def get_volume(self):
         return int(math.pow(self.__sides[0], 3))
@@ -106,7 +104,6 @@ class Cube(Figure):
 
 circle1 = Circle((200, 200, 100), 10)
 cube1 = Cube((222, 35, 130), 6)
-# cube1 = Cube((222, 35, 130), 6, 8, 1)
 
 # Проверка на изменение цветов:
 circle1.set_color(55, 66, 77)
