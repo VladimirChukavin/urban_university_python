@@ -18,3 +18,5 @@ https://urban-university.ru
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_5">Модуль 5. Классы и объекты</a>
 
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_6">Модуль 6. Наследование классов</a>
+
+<a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_7">Модуль 7. Работа с файлами и форматированный вывод</a>
