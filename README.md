@@ -22,3 +22,5 @@ https://urban-university.ru
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_7">Модуль 7. Работа с файлами и форматированный вывод</a>
 
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_8">Модуль 8. Исключения</a>
+
+<a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_9">Модуль 9. Инструменты функционального программирования</a>
