@@ -24,3 +24,5 @@ https://urban-university.ru
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_8">Модуль 8. Исключения</a>
 
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_9">Модуль 9. Инструменты функционального программирования</a>
+
+<a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_10">Модуль 10. Мультипоточность</a>
