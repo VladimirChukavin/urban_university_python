@@ -3,7 +3,7 @@ import requests
 import threading
 import queue
 
-ACCESS_TOKEN = 'ADke4I7svFdqVZ-nB4eNgPAjTMMPJzJ-r-sss0nRUQ4C3CXNKYyXZVArFoQQj_TD'
+ACCESS_TOKEN = '--- access_token ---'
 RANDOM_GENRE_API_URL = 'https://binaryjazz.us/wp-json/genrenator/v1/genre/'
 GENIUS_API_URL = 'https://api.genius.com/search'
 GENIUS_URL = 'https://genius.com'
