@@ -1,4 +1,5 @@
 # Простые Юнит-тесты
+import math
 import unittest
 
 
@@ -18,16 +19,23 @@ def div(a, b):
     return a / b
 
 
-def add(a, b):
-    return a ** 2 + b ** 2
+# def add(a, b):
+#     return a ** 2 + b ** 2
+
+def sqrt(a):
+    return math.sqrt(a)
+
+
+def pow(a, b):
+    return a ** b
 
 
 class CalcTest(unittest.TestCase):
     def test_add(self):
-        """
-        Test add
-        :return:
-        """
+        # """
+        # Test add
+        # :return:
+        # """
         self.assertEqual(add(1, 2), 3)
 
     def test_sub(self):
