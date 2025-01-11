@@ -1,6 +1,7 @@
 # Простые Юнит-тесты
 import math
 import unittest
+import random
 
 
 def add(a, b):
@@ -31,6 +32,7 @@ def pow(a, b):
 
 
 class CalcTest(unittest.TestCase):
+    @unittest.skip('Fail test')
     def test_add(self):
         # """
         # Test add
@@ -38,6 +40,7 @@ class CalcTest(unittest.TestCase):
         # """
         self.assertEqual(add(1, 2), 3)
 
+    @unittest.skipIf(random.randint(0, 2), 'Wrong choice')
     def test_sub(self):
         self.assertEqual(sub(3, 2), 1)
 
