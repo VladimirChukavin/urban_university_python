@@ -1,12 +1,12 @@
-2025-01-12 14:46:32,406 | INFO | Succesful divide 3 / 5
-2025-01-12 14:46:32,406 | ERROR | Cannot divide by zero
+2025-01-15 15:19:53,851 | INFO | Succesful divide 3 / 5
+2025-01-15 15:19:53,851 | ERROR | Cannot divide by zero
 Traceback (most recent call last):
   File "D:\myexperiences\urban_university_python\module_12\logging_methods.py", line 21, in div
     a / b
     ~~^~~
 ZeroDivisionError: division by zero
-2025-01-12 14:46:32,406 | INFO | Succesful square root of 9
-2025-01-12 14:46:32,406 | ERROR | Cannot calculate square root
+2025-01-15 15:19:53,851 | INFO | Succesful square root of 9
+2025-01-15 15:19:53,852 | ERROR | Cannot calculate square root
 Traceback (most recent call last):
   File "D:\myexperiences\urban_university_python\module_12\logging_methods.py", line 31, in sqrt
     math.sqrt(a)
