@@ -34,3 +34,6 @@ venv.bak/
 
 # PyCharm
 .idea/
+
+# Custom files
+module_13/creating_telegram_bots.py
