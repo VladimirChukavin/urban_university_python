@@ -37,3 +37,4 @@ venv.bak/
 
 # Custom files
 module_13/creating_telegram_bots.py
+identifier.sqlite
