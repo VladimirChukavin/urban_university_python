@@ -34,3 +34,5 @@ https://urban-university.ru
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_12">Модуль 12. Поддержка цикла разработки</a>
 
 <a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_13">Модуль 13. Основы асинхронного программирования на базе фреймворка aiogram</a>
+
+<a href="https://github.com/VladimirChukavin/urban_university_python/tree/master/module_14">Модуль 14. Библиотека для работы с данными</a>
